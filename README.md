@@ -1,5 +1,5 @@
 # advanced_deployment
-VM-Series Advanced Deployment for GCP 
+VM-Series Advanced Deployment for GCP Qwiklabs
 
 # 2 x VM-Series / Public LB / Internal LB / 2 x Spoke VPCs
 
