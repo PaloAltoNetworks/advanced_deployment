@@ -1,9 +1,9 @@
  project_id      = ""                      # Your project ID for the deployment
  public_key_path = "~/.ssh/gcp-demo.pub"   
 
-#fw_panos        = "flex-byol-1001"              # Uncomment for PAN-OS 10.0.1 - BYOL
-#fw_panos        = "flex-bundle1-1001"           # Uncomment for PAN-OS 10.0.1 - PAYG Bundle 1
- fw_panos        = "flex-bundle2-1001"           # Uncomment for PAN-OS 10.0.1 - PAYG Bundle 2
+#fw_panos        = "flex-byol-1002"              # Uncomment for PAN-OS 10.0.2 - BYOL
+#fw_panos        = "flex-bundle1-1002"           # Uncomment for PAN-OS 10.0.2 - PAYG Bundle 1
+ fw_panos        = "flex-bundle2-1002"           # Uncomment for PAN-OS 10.0.2 - PAYG Bundle 2
 
 
 #-------------------------------------------------------------------
