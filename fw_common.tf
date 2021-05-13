@@ -44,7 +44,7 @@ module "lb_inbound" {
   service_port = 80
   instances    = module.fw_common.vm_self_link
   providers = {
-    google = google-beta
+    google = google
   }
 }
 
@@ -82,7 +82,7 @@ module "lb_outbound" {
     ]
   }
   providers = {
-    google = google-beta
+    google = google
   }
 }
 
@@ -95,7 +95,7 @@ resource "google_compute_route" "default" {
   network      = module.vpc_trust.vpc_self_link
   next_hop_ilb = module.lb_outbound.forwarding_rule[0]
   priority     = 99
-  provider     = google-beta
+  provider     = google
 }
 
 resource "google_compute_route" "eastwest" {
@@ -104,7 +104,7 @@ resource "google_compute_route" "eastwest" {
   network      = module.vpc_trust.vpc_self_link
   next_hop_ilb = module.lb_outbound.forwarding_rule[1]
   priority     = 99
-  provider     = google-beta
+  provider     = google
 }
 
 
