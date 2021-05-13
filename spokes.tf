@@ -47,13 +47,13 @@ module "ilb_web" {
     ]
   }
   providers = {
-    google = google-beta
+    google = google
   }
 }
 
 resource "google_compute_network_peering" "trust_to_spoke1" {
   name                 = "${var.trust_vpc}-to-${var.spoke1_vpc}"
-  provider             = google-beta
+  provider             = google
   network              = module.vpc_trust.vpc_self_link
   peer_network         = module.vpc_spoke1.vpc_self_link
   export_custom_routes = true
@@ -61,7 +61,7 @@ resource "google_compute_network_peering" "trust_to_spoke1" {
 
 resource "google_compute_network_peering" "spoke1_to_trust" {
   name                 = "${var.spoke1_vpc}-to-${var.trust_vpc}"
-  provider             = google-beta
+  provider             = google
   network              = module.vpc_spoke1.vpc_self_link
   peer_network         = module.vpc_trust.vpc_self_link
   import_custom_routes = true
@@ -93,7 +93,7 @@ module "vm_spoke2" {
 
 resource "google_compute_network_peering" "trust_to_spoke2" {
   name                 = "${var.trust_vpc}-to-${var.spoke2_vpc}"
-  provider             = google-beta
+  provider             = google
   network              = module.vpc_trust.vpc_self_link
   peer_network         = module.vpc_spoke2.vpc_self_link
   export_custom_routes = true
@@ -103,7 +103,7 @@ resource "google_compute_network_peering" "trust_to_spoke2" {
 
 resource "google_compute_network_peering" "spoke2_to_trust" {
   name                 = "${var.spoke2_vpc}-to-${var.trust_vpc}"
-  provider             = google-beta
+  provider             = google
   network              = module.vpc_spoke2.vpc_self_link
   peer_network         = module.vpc_trust.vpc_self_link
   import_custom_routes = true
