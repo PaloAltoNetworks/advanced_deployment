@@ -1,6 +1,9 @@
 variable bucket_name {
 }
 
+variable bucket_location{
+}
+
 variable file_location {
 }
 
