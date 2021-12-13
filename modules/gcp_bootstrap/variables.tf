@@ -22,3 +22,7 @@ variable license {
 variable software {
   default = []
 }
+
+variable location {
+  default = "US"
+}
