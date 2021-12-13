@@ -78,9 +78,6 @@ module "lb_outbound" {
       }
     ]
   }
-  providers = {
-    google = google
-  }
 }
 
 
