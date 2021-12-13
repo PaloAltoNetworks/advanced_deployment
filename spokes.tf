@@ -46,9 +46,6 @@ module "ilb_web" {
       }
     ]
   }
-  providers = {
-    google = google
-  }
 }
 
 resource "google_compute_network_peering" "trust_to_spoke1" {
