@@ -43,9 +43,6 @@ module "lb_inbound" {
   name         = var.extlb_name
   service_port = 80
   instances    = module.fw_common.vm_self_link
-  providers = {
-    google = google
-  }
 }
 
 #-----------------------------------------------------------------------------------------------
