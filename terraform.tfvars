@@ -22,6 +22,8 @@ trust_vpc         = "trust-vpc"
 trust_subnet      = ["trust"]
 trust_cidr        = ["192.168.2.0/24"]
 
+spoke_vm_image    = "https://www.googleapis.com/compute/v1/projects/panw-gcp-team-testing/global/images/ubuntu-2004-lts-apache"
+
 spoke1_vpc        = "spoke1-vpc"
 spoke1_subnets    = ["spoke1-subnet1"]
 spoke1_cidrs      = ["10.1.0.0/24"]
