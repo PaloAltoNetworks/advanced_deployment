@@ -68,6 +68,9 @@ variable mgmt_sources {
   type = list(string)
 }
 
+variable spoke_vm_image {
+}
+
 variable spoke1_vpc {
 }
 
