@@ -7,7 +7,7 @@
 
 
 #-------------------------------------------------------------------
-regions            = ["us-east4"]
+regions            = ["us-west1"]
 
 mgmt_vpc          = "mgmt-vpc"
 mgmt_subnet       = ["mgmt"]
