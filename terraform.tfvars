@@ -1,4 +1,4 @@
- project_id      = ""                      # Your project ID for the deployment
+ project_id      = "central-oath-343523"                      # Your project ID for the deployment
  public_key_path = "~/.ssh/gcp-demo.pub"   
 
 #fw_panos        = "flex-byol-1002"              # Uncomment for PAN-OS 10.0.2 - BYOL
